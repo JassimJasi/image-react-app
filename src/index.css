@@ -6,7 +6,6 @@
   --error: #ff4a4a;
 }
 
-/* base styles & title */
 body{
   font-family: "Noto Serif";
   color: rgb(134, 118, 118);
@@ -78,7 +77,7 @@ label:hover{
  }
 
 .img-wrap{
-  /*overflow: hidden;*/
+  
   height: 0;
   padding: 50% 0;
   position: relative;
