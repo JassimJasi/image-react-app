@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+:root{
+  --primary: #efb6b2;
+  --secondary: #4e4e4e;
+  --error: #ff4a4a;
+}
+
+/* base styles & title */
+body{
+  font-family: "Noto Serif";
+  color: rgb(134, 118, 118);
+}
+.App{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.title h1{
+  color: pink;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+}
+.title h2, .title p{
+  text-align: center;
+}
+.title h2{
+  margin-top: 7px;
+  font-size: 2.6rem;
+}
+
+form{
+  margin: 30px auto 10px;
+  text-align: center;
+}
+label input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+label{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 30px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 24px;
+}
+label:hover{
+  background: var(--primary);
+  color: white;
+}
+.output{
+  height: 60px;
+  font-size: 0.8rem;
+}
+.error{
+  color: var(--error);
+}
+
+.progress-bar{
+  height: 5px;
+  background: pink;
+  margin-top: 20px;
+}
+
+.img-grid{
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+ }
+
+.img-wrap{
+  /*overflow: hidden;*/
+  height: 0;
+  padding: 50% 0;
+  position: relative;
+  opacity: 0.8;
+  
+}
+.img-wrap img{ 
+  width: 200px;
+  height: 300px;
+  max-width: fit-content;
+  max-height: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+ 
+}
+
+.img-wrap img:hover {
+  transform: scale(1.2);
+}
